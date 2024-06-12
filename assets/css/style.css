@@ -32,15 +32,21 @@ body {
   opacity: 1;
 }
 .header-section .navigation .navbar .navbar-nav .nav-link {
-    color: #ffffff;
-    text-align: left;
-    font: normal normal bold 14px/30px;
-    letter-spacing: 0.28px;
-    color: #ffffff;
-    opacity: 1;
-  }
+  color: #ffffff;
+  text-align: left;
+  font: normal normal bold 14px/30px;
+  letter-spacing: 0.28px;
+  color: #ffffff;
+  opacity: 1;
+}
 .header-section .navigation .navbar .navbar-nav .active {
-    color: #ffdd00 !important;
-  }
+  color: #ffdd00 !important;
+}
+
+.header-section .navigation .navbar .navbar-nav .nav-link:last-child {
+  /* margin-left: 64px; */
+  padding-right: 101px;
+}
+
 /* -- end navigation styles */
 /* ----------------------- End Header Section Styles ----------------------- */
