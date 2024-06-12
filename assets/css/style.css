@@ -1,4 +1,46 @@
 body {
   width: 1920px;
   height: 1280px;
+  margin: 0;
 }
+
+/* ----------------------- Start Header Section Styles ----------------------- */
+
+.header-section {
+}
+/* -- start navigation styles */
+.header-section .navigation {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 162px;
+  background: transparent url("../img/header/Rectangle\ 46.png") 0% 0% no-repeat;
+  opacity: 1;
+  justify-content: center;
+}
+.header-section .navigation .navbar {
+  width: 100%;
+  height: 100%;
+  /* justify-content: center; */
+}
+.header-section .navigation .navbar .navbar-brand {
+  margin-left: 101px;
+  margin-right: 64px;
+  width: 131px;
+  height: 65px;
+  background: transparent url("../img/header/Groupe 32.png") 0% 0% no-repeat;
+  opacity: 1;
+}
+.header-section .navigation .navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    text-align: left;
+    font: normal normal bold 14px/30px;
+    letter-spacing: 0.28px;
+    color: #ffffff;
+    opacity: 1;
+  }
+.header-section .navigation .navbar .navbar-nav .active {
+    color: #ffdd00 !important;
+  }
+/* -- end navigation styles */
+/* ----------------------- End Header Section Styles ----------------------- */
