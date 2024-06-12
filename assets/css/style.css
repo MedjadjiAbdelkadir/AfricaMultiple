@@ -1,52 +1,103 @@
 body {
-  width: 1920px;
-  height: 1280px;
   margin: 0;
+  padding: 0;
 }
 
 /* ----------------------- Start Header Section Styles ----------------------- */
 
 .header-section {
+  width: 100%;
 }
 /* -- start navigation styles */
 .header-section .navigation {
-  top: 0px;
-  left: 0px;
-  width: 1920px;
-  height: 162px;
-  background: transparent url("../img/header/Rectangle\ 46.png") 0% 0% no-repeat;
+  width: 100%;
+  height: 62px;
+  background-color: black;
+  /* background: transparent url("../img/header/Rectangle\ 46.png") 0% 0% no-repeat; */
   opacity: 1;
   justify-content: center;
 }
+.header-section .navigation .container {
+  width: 98%;
+}
 .header-section .navigation .navbar {
-  width: 100%;
   height: 100%;
-  /* justify-content: center; */
+}
+.header-section .navigation .navbar .navbar-toggler {
+  color: #ffffff;
+  background-color: #ffffff;
 }
 .header-section .navigation .navbar .navbar-brand {
-  margin-left: 101px;
-  margin-right: 64px;
   width: 131px;
-  height: 65px;
+  height: 45px;
   background: transparent url("../img/header/Groupe 32.png") 0% 0% no-repeat;
+  background-size: contain;
   opacity: 1;
+}
+.header-section .navigation .navbar .navbar-nav {
 }
 .header-section .navigation .navbar .navbar-nav .nav-link {
   color: #ffffff;
   text-align: left;
+  width: 100%;
   font: normal normal bold 14px/30px;
-  letter-spacing: 0.28px;
   color: #ffffff;
   opacity: 1;
 }
+
 .header-section .navigation .navbar .navbar-nav .active {
   color: #ffdd00 !important;
+}
+.header-section .navigation .navbar .navbar-nav a:hover {
+  color: #ffd500;
 }
 
 .header-section .navigation .navbar .navbar-nav .nav-link:last-child {
   /* margin-left: 64px; */
-  padding-right: 101px;
+  /* padding-right: 101px; */
 }
 
 /* -- end navigation styles */
+
+/* -- start main styles */
+.header-section .main {
+  height: 90vh;
+  width: 100%;
+  background: transparent
+    url("../img/header/modern-3d-black-paper-style-background.png") 0% 0%
+    no-repeat;
+  background-color: #010101ec;
+  position: relative;
+}
+.header-section .main .content {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+}
+
+.header-section .main .content .colm-1 {
+  width: 100%;
+  height: 350px;
+  background-color: #28292a;
+  opacity: 0.27;
+  position: relative;
+
+}
+.header-section .main .content .colm-1 .child {
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding-bottom: 25px;
+  background: transparent url("../img/header/Rectangle 36.png") 0% 0% no-repeat;
+  opacity: 1;
+  /* background-color: #666768; */
+}
+.header-section .main .content .colm-1 .child h1{
+    color: #FFFFFF;
+    /* background-color: black; */
+}
+/* -- end main styles */
 /* ----------------------- End Header Section Styles ----------------------- */
