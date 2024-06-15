@@ -147,8 +147,10 @@ body {
 .header-section .main .parent2 .child2 {
   position: absolute;
   height: 540px;
-  width: 100%;
+  /* width: 100%; */
   top: 35px;
+  right: 20px;
+  left: 20px;
 }
 
 .header-section .main .parent2 .child2 .carousel-indicators{
@@ -166,7 +168,6 @@ body {
 .header-section .main .parent2 .child2 .carousel-inner{
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 15px;
   padding-left: 20px;
   height: 416px;
 }
