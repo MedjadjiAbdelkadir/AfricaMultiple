@@ -49,7 +49,9 @@ body {
   color: #ffdd00 !important;
 }
 .header-section .navigation .navbar .navbar-nav a:hover {
-  color: #ffd500;
+	color: #ffd500;
+	animation: slide 1.2s ease-in-out forwards;
+  /* background-color: darkgreen; */
 }
 
 .header-section .navigation .navbar .navbar-nav .nav-link:last-child {
@@ -61,7 +63,7 @@ body {
 
 /* -- start main styles */
 .header-section .main {
-  height: 90vh;
+  height: 700px;
   width: 100%;
   background-color: #000000e5;
   background-repeat: no-repeat;
@@ -78,7 +80,7 @@ body {
   background-color: #0000002a;
   height: 470px;
   width: 100%;
-  top: 5%;
+  top: 3%;
 }
 .header-section .main .parent1 .child {
   position: absolute;
@@ -124,58 +126,108 @@ body {
   margin-left: 0px;
 }
 
-/* .header-section .main .parent2 {
-  width: 100%;
-  height: 100%;
-  background: transparent url("../img/header/Tracé 1737.png") 0% 0% no-repeat;
-  background-size: cover;
-  opacity: 1;
-} */
-
-.header-section .main .parent2{
+.header-section .main .parent2 {
   position: relative;
+  /* top: 3%; */
 }
 .header-section .main .parent2 .child1 {
   position: absolute;
   background: transparent url("../img/header/Tracé 1737.png") 0% 0% no-repeat;
   height: 420px;
   width: 70%;
-  top: 7%;
+  top: 5%;
   left: 30%;
 }
 
 .header-section .main .parent2 .child2 {
   position: absolute;
   height: 540px;
-  /* width: 100%; */
-  top: 35px;
+  top: 25px;
   right: 20px;
   left: 20px;
 }
 
-.header-section .main .parent2 .child2 .carousel-indicators{
-  margin-bottom: -40px;
+.header-section .main .parent2 .child2 .carousel-indicators {
+  margin-bottom: -60px;
 }
-.header-section .main .parent2 .child2 .carousel-indicators li{
-  width: 10px;
-  height: 10px;
+
+.header-section .main .parent2 .child2 .carousel-indicators li {
+  width: 17px;
+  height: 17px;
   transform: skew(45deg, -45deg);
-  /* transform: translate(50%, 50%); */
 }
-.header-section .main .parent2 .child2 .carousel-indicators .active{
+.header-section .main .parent2 .child2 .carousel-indicators .active {
   background-color: #ffdd00;
 }
-.header-section .main .parent2 .child2 .carousel-inner{
+.header-section .main .parent2 .child2 .custom-indicators {
+  /* height: 200px; */
+  margin-bottom: -125px;
+  /* background-color: darkred; */
+  margin-left: 60px;
+}
+/* .header-section .main .parent2 .child2 .custom-indicators li{
+  display: none;
+} */
+.header-section .main .parent2 .child2 .custom-indicators li {
+  transform: none;
+  visibility: hidden;
+  width: 45px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: transparent url("../img/header/boutton.png") 0% 0% no-repeat;
+  /* transition: width 0.3s, height 0.3s; */
+  /* transition: width 0.9s, height 0.9s; */
+  /* transition: all 0.1s ease; */
+  background-color: darkgreen;
+}
+.header-section .main .parent2 .child2 .custom-indicators li:hover {
+  width: 100px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  /* margin-left: 45px;
+  margin-top: 120px; */
+  /* background: transparent url("../img/header/boutton@2x.png") 0% 0% no-repeat; */
+  background: transparent url("../img/header/boutton@2x.png") 0% 0% no-repeat;
+  transform: translateX(50px) translateY(50px);
+  /* background-color: red; */
+}
+.header-section .main .parent2 .child2 .custom-indicators .active {
+  background-color: initial;
+  visibility: visible;
+}
+
+.header-section .main .parent2 .child2 .carousel-inner {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
   height: 416px;
 }
-.header-section .main .parent2 .child2 .carousel-inner .carousel-item{
+.header-section .main .parent2 .child2 .carousel-inner .carousel-item {
   height: 416px;
 }
-.header-section .main .parent2 .child2 .carousel-inner .carousel-item img{
+.header-section .main .parent2 .child2 .carousel-inner .carousel-item img {
   height: 386px;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	51% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 /* -- end main styles */
 /* ----------------------- End Header Section Styles ----------------------- */
